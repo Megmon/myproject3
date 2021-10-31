@@ -9,7 +9,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2021,
-    "ecmaFeatures": { "tsx": true },
+    "ecmaFeatures": { "jsx": true },
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
