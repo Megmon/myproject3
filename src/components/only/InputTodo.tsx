@@ -9,7 +9,12 @@ type Todolist = {
   deadline: string
 }
 
-export const InputTodo = (props: { todoList: Todolist; setTodoList: () => void }) => {
+type Props = {
+  todoList: Todolist
+  setTodoList: () => void
+}
+
+export const InputTodo = (props: Props) => {
   const { todoList, setTodoList } = props
   //やることが入力されたらnewTodoに値をセットする
   const [newTodo, setTodo] = useState<string>('')

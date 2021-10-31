@@ -34,7 +34,7 @@ export const Home: React.FunctionComponent = () => {
       <Fragment>
         <BodyStyle>
           <Header>やることリスト</Header>
-          <InputTodo todoList={{ todoList }} setTodoList={{ setTodoList }} />
+          <InputTodo todoList={todoList} setTodoList={setTodoList} />
           <div style={{ textAlign: 'right' }}>
             <Link to="/Page1">やれたことリスト</Link>
           </div>
