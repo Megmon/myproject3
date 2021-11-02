@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import DayPickerInput from 'react-day-picker/DayPickerInput'
 import 'react-day-picker/lib/style.css'
+//import type {Todolist} from '../types/Todolist'
 
 //newtodolistの型指定
 type Todolist = {
@@ -10,8 +11,8 @@ type Todolist = {
 }
 
 type Props = {
-  todoList: Todolist
-  setTodoList: () => void
+  todoList: Todolist[]
+  setTodoList: React.Dispatch<React.SetStateAction<Todolist[]>>
 }
 
 export const InputTodo = (props: Props) => {
